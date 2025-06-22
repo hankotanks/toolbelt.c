@@ -1,1 +1,1 @@
-Collection of frequently-used C snippets.
+Collection of frequently used C snippets.
