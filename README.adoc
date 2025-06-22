@@ -1,1 +1,1 @@
-Collection of useful code snippets that I find myself using often.
+Collection of frequently-used C snippets.
