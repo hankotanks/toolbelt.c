@@ -20,7 +20,7 @@ static inline const char* read_file_contents(const char* path) {
     char* contents;
     contents = (char*) malloc(file_size + 1);
     if(!(contents = (char*) malloc(file_size + 1)))
-        LOG_AND_CLOSE(stream, "Unable to allocate buffer for file contents [%s].", path)
+        LOG_AND_CLOSE(stream, "Unable to allocate buffer for file contents [%s].", path);
     size_t size = fread(contents,1,file_size, stream);
     if(size < file_size && !feof(stream))
         LOG_AND_CLOSE(stream, "Read less bytes than expected [%s].", path);
